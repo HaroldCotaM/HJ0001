@@ -58,10 +58,12 @@ public class LoginController extends HttpServlet {
                 x = 1;
                 datos.put("op", x);
                 datos.put("rol", usuario.get("rol"));
+                
                 out.println(gson.toJson(datos));
             }else{
                 out.println(0);
             }
+
         }else{
                     session.setAttribute("nombres",null);
                     session.setAttribute("user",null);  

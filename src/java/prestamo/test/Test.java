@@ -8,6 +8,7 @@ package prestamo.test;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import prestamo.dao.UsuarioDAO;
 import prestamo.util.Conexion;
 
 
@@ -23,13 +24,15 @@ public class Test {
 //static List<Map<String, ?>> lista2 = new ArrayList<>();
 //static List<Map<String, ?>> lista3 = new ArrayList<>();
 //static List<Map<String, ?>> lista4 = new ArrayList<>();
+  static UsuarioDAO aO= new UsuarioDAO();
 
 /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       conex();
+//       conex();
+    validar2();
         //saveP();
         //updateP();
         //listarP();
@@ -108,7 +111,13 @@ public class Test {
 //
 //    }
     
-    
+    public static void validar2(){
+        if(aO.login("admin", "admin")!=null){
+            System.out.println("si");
+        }else{
+            System.out.println("no");
+        }
+    }
 }
     
 
