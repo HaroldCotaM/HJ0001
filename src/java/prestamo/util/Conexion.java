@@ -16,8 +16,8 @@ import java.sql.SQLException;
 public class Conexion {
     private static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
     private static final String DRIVER = "oracle.jdbc.OracleDriver";
-    private static final String USER = "userexalp1";
-    private static final String PASS = "12345";
+    private static final String USER = "PROYECTO";
+    private static final String PASS = "123";
     private static Connection cx = null;
     
     public static Connection getConexion(){

@@ -27,8 +27,8 @@ public class UsuarioDAO implements Operaciones<UsuarioDTO>{
     private PreparedStatement ps;
     private ResultSet rs;
     private static final String SQL_VALIDA1 = "SELECT * FROM USUARIO WHERE NOM_USER = ? AND CLAVE = ?";
-    private static final String SQL_VALIDA2 = "SELECT A.PER_USU_ID, A.ROL_ID, A.USU_USER, A.USU_PASS, B.ROL_NOMBRE, C.PER_NOMBRES, C.PER_APELLIDOS  FROM USUARIO A, ROL B, PERSONA C\n" +
-"WHERE A.ROL_ID = B.ROL_ID AND A.PER_USU_ID= C.PER_ID";
+    private static final String SQL_VALIDA2 = "SELECT A.PER_USU_ID, A.ROL_ID, A.USU_USER, A.USU_PASS, B.ROL_NOMBRE, C.PER_NOMBRES, C.PER_APELLIDOS  FROM USUARIO A, ROL B, PERSONA C " +
+"WHERE A.ROL_ID = B.ROL_ID AND A.PER_USU_ID= C.PER_ID AND A.USU_USER=? AND A.USU_PASS=?";
 
 
     //SELECT u.IDUSUARIO, u.NOM_USER, r.IDROL, r.NOM_ROL  from usuario u, rol r where u.IDROL=r.IDROL;
