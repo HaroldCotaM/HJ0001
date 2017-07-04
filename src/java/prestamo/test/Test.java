@@ -8,6 +8,7 @@ package prestamo.test;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import prestamo.util.Conexion;
 
 
 /**
@@ -28,7 +29,7 @@ public class Test {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       //conex();
+       conex();
         //saveP();
         //updateP();
         //listarP();
@@ -38,13 +39,13 @@ public class Test {
 //        insertarDetalle();
         
     }
-//    public static void conex(){
-//        if(Conexion.getConexion()!=null){
-//            System.out.println("Si");
-//        }else{
-//            System.out.println("no");
-//        }
-//    }
+    public static void conex(){
+        if(Conexion.getConexion()!=null){
+            System.out.println("Si");
+        }else{
+            System.out.println("no");
+        }
+    }
 //    public static void saveP(){
 //     Prestamo p = new Prestamo(1, "12/02/2017", "16/02/2017");
 //     if(aO2.create(p)==1){

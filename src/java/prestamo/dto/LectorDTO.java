@@ -7,8 +7,25 @@ package prestamo.dto;
 
 /**
  *
- * @author Harold
+ * @author UPEU
  */
 public class LectorDTO {
+    private int per_lec_id;
+
+    public LectorDTO() {
+    }
+
+    public LectorDTO(int per_lec_id) {
+        this.per_lec_id = per_lec_id;
+    }
+
+    public int getPer_lec_id() {
+        return per_lec_id;
+    }
+
+    public void setPer_lec_id(int per_lec_id) {
+        this.per_lec_id = per_lec_id;
+    }
+    
     
 }
