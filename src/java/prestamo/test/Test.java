@@ -8,6 +8,7 @@ package prestamo.test;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import prestamo.dao.PrestamoDAO;
 import prestamo.dao.UsuarioDAO;
 import prestamo.util.Conexion;
 
@@ -18,10 +19,10 @@ import prestamo.util.Conexion;
  */
 public class Test {
 //static ClienteDAO aO1 = new ClienteDAO();
-//static PrestamoDAO aO2 = new PrestamoDAO();
+static PrestamoDAO aO2 = new PrestamoDAO();
 //static DetalleDAO dAO= new DetalleDAO();
 //static List<Cliente> lista1 = new ArrayList<>();
-//static List<Map<String, ?>> lista2 = new ArrayList<>();
+static List<Map<String, ?>> lista2 = new ArrayList<>();
 //static List<Map<String, ?>> lista3 = new ArrayList<>();
 //static List<Map<String, ?>> lista4 = new ArrayList<>();
   static UsuarioDAO aO= new UsuarioDAO();
@@ -32,10 +33,10 @@ public class Test {
     public static void main(String[] args) {
         // TODO code application logic here
 //       conex();
-    validar2();
+//    validar2();
         //saveP();
         //updateP();
-        //listarP();
+        listarP();
 //        listarDA();
         //listarC();
         //max();
@@ -69,10 +70,10 @@ public class Test {
 //         System.out.println("no");
 //     }
 //    }
-//    public static void listarP(){
-//    lista2 = aO2.readAll2();
-//        System.out.println(lista2);
-//    }
+    public static void listarP(){
+    lista2 = aO2.readAll2();
+        System.out.println(lista2);
+    }
 //    public static void listarD(){
 //    lista3 = dAO.readAll2(41);
 //    
